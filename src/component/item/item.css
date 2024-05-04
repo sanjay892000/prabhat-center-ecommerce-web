@@ -1,0 +1,36 @@
+.item-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 275px;
+    margin-bottom: 15px;
+}
+.item-page h4{
+    color: rgb(38, 37, 37);
+}
+.item-page img{
+    width: 275px;
+    height: auto;
+    object-fit: cover;
+}
+.price-value{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.new_price{
+    font-weight: 800;
+    color: rgb(38, 37, 37);
+}
+
+.old_price{
+    color: rgb(115, 115, 109);
+    text-decoration: line-through;
+}
+
+.item-page:hover{
+    transform: scale(1.025);
+    transition: 0.5s;
+}

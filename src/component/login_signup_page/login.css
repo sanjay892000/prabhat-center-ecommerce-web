@@ -1,0 +1,77 @@
+.main-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.left-page {
+    width: 100%;
+    height: 80%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-page img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-page form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.notAccount{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.right-page form h1 {
+    margin-bottom: 30px;
+}
+
+.right-page form input {
+    height: 50px;
+    width: 90%;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+.right-page form button{
+    height: 50px;
+    width: 150px;
+    background: rgb(255, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+        background: rgb(253, 18, 18);
+    }
+
+}

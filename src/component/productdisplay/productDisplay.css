@@ -1,0 +1,138 @@
+.productDisplay-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productDisplay{
+    width: 90%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+}
+
+.productdisplay-left{
+    width: 100%;
+    display: flex;
+
+}
+.productDisplayImg-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.productDisplayImg-list img{
+    height: 145px;
+    width: 110px;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-right: 5px;
+    &:hover{
+        transform: scale(1.08);
+        transition: 0.7s;
+    }
+}
+
+.productDisplayImg-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.productDisplayImg-main img{
+    width: 90%;
+    height: 98%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    &:hover{
+        transform: scale(1.01);
+        transition: 0.6s;
+    }
+}
+
+.productDisplay-right{
+    width: 100%;
+    height: 100%;
+}
+
+.product-star{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    margin: 5px;
+}
+
+.product-price{
+    width: 100%;
+    height: 25px;
+    display: flex;
+}
+.product-price span:nth-child(1){
+    margin: 3px 8px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.product-price span:nth-child(2){
+    margin: 3px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
+.product-description{
+    width: 100%;
+    margin: 10px 5px;
+}
+
+.product-size{
+    width: 100%;
+    display: flex;
+}
+.product-size div{
+    height: 30px;
+    width: 50px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+    &:hover {
+        background: rgb(255, 227, 223);
+    }
+}
+
+.addtocart{
+    height: 50px;
+    width: 210px;
+    color: white;
+    background-color: rgb(255, 52, 52);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    font-size: 20px;
+    &:hover {
+        background: rgb(253, 18, 18);
+    }
+}
+
+.product-category-option, .product-category-tag{
+    width: 100%;
+    margin: 15px 0px;
+    font-weight: 700;
+}
+
+.product-category-option span, .product-category-tag span{
+    font-weight: 400;
+}

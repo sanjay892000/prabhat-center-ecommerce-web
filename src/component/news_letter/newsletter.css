@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-letter-page {
+    margin: 25px 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-letter {
+    height: 70%;
+    width: 85%;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 187, 187);
+}
+
+
+.my-letter h1 {
+    font-size: 3.5vw;
+}
+
+.my-letter h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(38, 37, 37);
+    margin: 15px 0px 35px 0px;
+}
+
+.my-letter p {
+    font-weight: 600;
+}
+
+.input-email {
+    display: flex;
+    height: auto;
+    position: relative;
+}
+
+.input-email input {
+    height: 60px;
+    width: 45vw;
+    border-radius: 50px;
+    padding: 0px 25px;
+    border: 1px solid grey;
+    font-size: 1.5vw;
+}
+
+.my-letter button {
+    height: 60px;
+    width: 150px;
+    background: rgb(18, 18, 18);
+    color: rgb(255, 196, 0);
+    border: none;
+    border-radius: 40px;
+    font-size: 1.7vw;
+    cursor: pointer;
+    margin-left: -50px;
+    &:hover{
+        background-color: #080808;
+    }
+}
