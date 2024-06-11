@@ -3,7 +3,7 @@ import './recommendations.css'
 import {Link} from "react-router-dom";
 function Recommendations() {
   const [isVisible, setIsVisible] = useState(false);
-
+console.log(isVisible)
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
