@@ -1,5 +1,5 @@
 const express = require('express');
-const connectToDatabase = require('./database');
+const connectToDB = require('./database');
 require('dotenv').config();
 
 const cors = require('cors');
@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json());
 
 //call the database through client()
-connectToDatabase();
+connectToDB();
 
 app.get('/', (req, res) => {
   try {
@@ -26,7 +26,9 @@ app.get('/', (req, res) => {
   }
 });
 
-/* app.use('/api/auth', require('./routes/googleLoginRouter')); */
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/product', require('./routes/addToCart'));
+
 
 app.listen(port, () => {
   console.log(`backend app listening on port http://localhost:${port}`)

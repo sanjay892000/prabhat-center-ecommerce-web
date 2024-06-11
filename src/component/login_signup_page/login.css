@@ -1,5 +1,5 @@
 .main-page {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -18,16 +18,17 @@
 .left-page {
     width: 100%;
     height: 80%;
-    padding-top: 25px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .left-page img {
-    height: 80%;
-    width: 100%;
+    height: 98%;
+    width: 95%;
     object-fit: cover;
+    margin-top: 15px;
 }
 
 .right-page form {
@@ -59,7 +60,9 @@
     padding: 0px 10px;
     font-size: 17px;
 }
-
+.right-page form button Link{
+    color: rgb(255, 255, 255);
+}
 .right-page form button{
     height: 50px;
     width: 150px;

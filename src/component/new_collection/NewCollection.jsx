@@ -1,7 +1,7 @@
 import React from 'react';
 import new_collection from '../myimg/new_collections'
 import './newcollection.css'
-import Item from '../item/item'
+import Items from '../item/items'
 
 function NewCollection() {
   return (
@@ -11,7 +11,7 @@ function NewCollection() {
       <hr />
       <div className="popular-item">
         {new_collection.map((item, i)=>{
-            return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}  />
+            return <Items key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}  />
         })}
       </div>
     </div>

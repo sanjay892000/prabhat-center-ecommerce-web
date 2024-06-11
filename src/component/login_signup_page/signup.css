@@ -1,5 +1,5 @@
 .main-pages {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,17 +19,18 @@
 .left-pages {
     width: 100%;
     height: 90%;
-    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -20px;
 }
 
 .left-pages img {
-    height: 90%;
-    width: 100%;
+    height: 85%;
+    width: 95%;
     object-fit: cover;
     margin-left: -40px;
+    margin-top: 80px;
 }
 
 .right-pages form {
@@ -38,6 +39,14 @@
     width: 100%;
     height: 100%;
     align-items: center;
+}
+.error{
+    display: flex;
+    width: 89%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: red;
+    font-size: 13px;
 }
 
 .notAccounts{

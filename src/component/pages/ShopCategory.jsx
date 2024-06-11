@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Item from "../item/item";
+import Items from "../item/items";
 import "./style/shopcategory.css";
 import dropdown from "../myimg/dropdown_icon.png";
 import { ShopContext } from "../mycontext/ShopContext";
@@ -24,7 +24,7 @@ function ShopCategory(props) {
           {all_product.map((item, i) => {
             if (props.category === item.category) {
               return (
-                <Item
+                <Items
                   key={i}
                   id={item.id}
                   name={item.name}

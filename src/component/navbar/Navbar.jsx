@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import carts from '../myimg/cart_icon.png'
 import shoplogo from '../myimg/logo.png'
 import {Link} from "react-router-dom";
+import { ShopContext } from "../mycontext/ShopContext";
 import './Navbar.css'
 function Navbar() {
   const [menu, setmenu] = useState('shop');
+  const {getNumberOfItems} = useContext(ShopContext)
   return (
       <nav className='navbar'>
         <ul className='navleft'>
@@ -18,9 +20,9 @@ function Navbar() {
           <li onClick={()=>{setmenu('kids')}}><Link style={{textDecoration:'none'}} to='/kids'>kids{menu==='kids'?<hr/>:''}</Link></li>
         </ul>
         <ul className='navright'>
-          <Link to='/login' style={{textDecoration:'none'}}><button>login</button></Link>
-          <Link to='/carts'><img src={carts} alt="Loadding.." /></Link>
-          <li><p>{2}</p></li>
+          <Link onClick={()=>{setmenu('login')}} to='/login' style={{textDecoration:'none'}}><button>login</button></Link>
+          <Link onClick={()=>{setmenu('carts')}} to='/carts'><img src={carts} alt="Loadding.." /></Link>
+          <li><p>{getNumberOfItems()}</p></li>
         </ul>
       </nav>
   )
