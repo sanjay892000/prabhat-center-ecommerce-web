@@ -20,9 +20,9 @@ function Navbar() {
           <li onClick={()=>{setmenu('kids')}}><Link style={{textDecoration:'none'}} to='/kids'>kids{menu==='kids'?<hr/>:''}</Link></li>
         </ul>
         <ul className='navright'>
-          <Link onClick={()=>{setmenu('login')}} to='/login' style={{textDecoration:'none'}}><button>login</button></Link>
           <Link onClick={()=>{setmenu('carts')}} to='/carts'><img src={carts} alt="Loadding.." /></Link>
           <li><p>{getNumberOfItems()}</p></li>
+          <Link onClick={()=>{setmenu('login')}} to='/login' style={{textDecoration:'none'}}><button>Log In</button></Link>
         </ul>
       </nav>
   )
